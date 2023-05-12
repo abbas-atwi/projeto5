@@ -28,7 +28,27 @@ function produtosShow(index) {
 
 // console.log(produtos[0].children.classList.add("active"));
 produtos.forEach((item, index) => {
-  item.addEventListener("mousemove", () => {
+  item.addEventListener("click", () => {
     produtosShow(index);
+  });
+});
+
+// pointers
+const arraySlide = [0, 100, 200];
+const pointers = document.querySelectorAll(".pointer");
+
+function activePointer(index) {
+  pointers.forEach((item) => {
+    item.classList.remove("active");
+  });
+  pointers[index].classList.add("active");
+  const slide = document.querySelector(".sliders");
+  const mg = "vw";
+  const sliders = arraySlide[index] === 0 ? 0 : "-";
+  console.log((slide.style.marginLeft = `${sliders}${arraySlide[index]}${mg}`));
+}
+pointers.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    activePointer(index);
   });
 });
