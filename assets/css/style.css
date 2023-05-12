@@ -95,9 +95,9 @@ header {
 }
 .produtos-container .produto {
   flex: 1 1 139px;
-  min-width: 300px;
+  min-width: 260px;
   background-color: #222;
-  height: 300px;
+  height: 260px;
   border: 1px solid #fff;
   cursor: pointer;
   display: flex;
@@ -124,10 +124,63 @@ header {
   animation: produto-img 0.5s forwards;
 }
 .produtos-container .produto.active {
-  transform: scale(1.1);
+  transform: scale(1.07);
   transition: transform 0.3s ease-in;
 }
 .section-description {
   background-color: red;
   height: 500px;
+}
+
+.banner {
+  height: 300px;
+
+  overflow: hidden;
+}
+.sliders {
+  width: 1000vw;
+  height: 100%;
+  display: flex;
+}
+.slide {
+  width: 100vw;
+  background-color: #ccc;
+  height: 100%;
+  border-bottom: 5px solid green;
+}
+.slidearea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+.slidearea h1 {
+  font-size: 33px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 5px #222;
+  cursor: pointer;
+}
+.pointers {
+  width: 100vw;
+
+  height: 30px;
+  position: absolute;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.pointer {
+  background-color: #222;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.pointer.active {
+  background-color: #ccc;
+  border: 1px solid #222;
 }
