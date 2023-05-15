@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: red;
+}
+.box1 {
+  width: 300px;
+  height: 300px;
+
+  background-color: yellow;
+}
+
+.titulo {
+  height: 50px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box2 {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+}
+.box-produtos {
+  background-color: green;
+}
+
+.box-pai {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+.formulario {
+  width: 250px;
+  background-color: orange;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.formulario input {
+  margin-bottom: 10px;
+}
+button {
+  width: 100px;
+  background-color: red;
+}
