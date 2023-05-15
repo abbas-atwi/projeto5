@@ -85,3 +85,13 @@ pointers.forEach((item, index) => {
     activePointer(index);
   });
 });
+
+const menuBurguer = document.querySelector(".menuburguer");
+const menuNav = document.querySelector(".menu nav");
+function activeMenu() {
+  menuNav.classList.remove("active");
+}
+menuBurguer.addEventListener("click", () => {
+  // activeMenu();
+  menuNav.classList.toggle("active");
+});
