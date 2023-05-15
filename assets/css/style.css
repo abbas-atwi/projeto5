@@ -199,7 +199,8 @@ header {
   height: 100%;
 }
 .slidearea img {
-  width: 100%;
+  /* width: 100%; */
+  margin: auto;
 }
 .slidearea h1 {
   font-size: 33px;
@@ -221,6 +222,7 @@ header {
 }
 .pointer {
   background-color: #222;
+  border: 1px solid yellow;
   width: 15px;
   height: 15px;
   border-radius: 8px;
@@ -228,5 +230,5 @@ header {
 }
 .pointer.active {
   background-color: #ccc;
-  border: 1px solid #222;
+  border: 1px solid yellow;
 }
