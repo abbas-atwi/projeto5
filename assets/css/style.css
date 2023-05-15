@@ -20,6 +20,7 @@ header {
 }
 
 .logo {
+  flex: 1;
   height: 100px;
   display: flex;
   align-items: center;
@@ -55,9 +56,6 @@ header {
   }
 }
 
-.menu {
-  flex: 1;
-}
 .menu ul {
   display: flex;
   justify-content: flex-end;
@@ -231,4 +229,41 @@ header {
 .pointer.active {
   background-color: #ccc;
   border: 1px solid yellow;
+}
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.menuburguer {
+  width: 50px;
+  height: 35px;
+  cursor: pointer;
+  display: none;
+  background-color: #fff;
+}
+/* menu */
+@media (max-width: 450px) {
+  .menu ul {
+    display: none;
+  }
+
+  .menuburguer {
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .line-menu {
+    height: 5px;
+    background-color: #222;
+  }
+
+  .logo {
+    justify-content: center;
+    width: 300px;
+  }
+  .logo h1 {
+    font-size: 26px;
+  }
 }
