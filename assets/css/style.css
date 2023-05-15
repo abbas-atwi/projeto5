@@ -163,7 +163,7 @@ header {
 .banner {
   height: 300px;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .sliders {
   width: 1000vw;
@@ -172,8 +172,8 @@ header {
 }
 .slide {
   width: 100vw;
-
   height: 100%;
+  background-color: #222;
   border-bottom: 5px solid green;
 }
 
@@ -191,10 +191,11 @@ header {
   animation: slide 5s forwards;
 }
 .slidearea {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  overflow: hidden;
   height: 100%;
 }
 .slidearea img {
